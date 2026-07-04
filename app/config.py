@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     algorithm: str = "HS256"
     access_token_expire_minutes: int = 30
     stripe_secret_key: str
-    stripe_webhook_secret: str  # <--- Add this line right here
+    stripe_webhook_secret: str 
 
     class Config:
         env_file = ".env"
